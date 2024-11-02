@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "jeopardy"
+version = "0.1.0"
+description = ""
+authors = ["Kevin Marker <kmarker@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.3"
+rich = "^13.9.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+flake8 = "^7.1.1"
+mypy = "^1.13.0"
+pyright = "^1.1.387"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
