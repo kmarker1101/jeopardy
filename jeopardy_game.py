@@ -1,6 +1,4 @@
 import requests
-import json
-import random
 import time
 from rich.console import Console
 from rich.table import Table
@@ -29,6 +27,7 @@ class JeopardyGame:
                                       "prompt": prompt,
                                       "stream": False
                                   })
+            response.raise_for_status()
             result = response.json()
 
             # Split response into question and answer
